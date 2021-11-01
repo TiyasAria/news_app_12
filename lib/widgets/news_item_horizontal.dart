@@ -1,6 +1,9 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
 import 'package:newsapp/model/articles.dart';
 import 'package:newsapp/ui/detail_page.dart';
+import 'package:newsapp/utils/theme.dart';
 
 class NewsHeadLine extends StatelessWidget {
    // membuat var untuk menampung data daari model
@@ -43,6 +46,26 @@ class NewsHeadLine extends StatelessWidget {
                   ]
                 )
               ),
+            ),
+            Positioned(
+              bottom: 30,
+                child: Container(
+                  padding: EdgeInsets.only(left: 10, right: 10),
+                  width: 250,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(article.title, style: titleArticle.copyWith(
+                        fontSize: 12
+                      ),
+                      ),
+                      Text(article.author, style: authorDateArticle.copyWith(
+                        fontSize: 10,
+
+                      ),)
+                    ],
+                  ),
+                )
             )
           ],
         ),
