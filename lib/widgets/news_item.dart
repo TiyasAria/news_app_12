@@ -56,7 +56,7 @@ class _NewsItemState extends State<NewsItem> {
                       ),
                       SizedBox(height: 10,),
                       Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           Row(
                             children: [
